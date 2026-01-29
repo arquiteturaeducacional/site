@@ -10,7 +10,7 @@
         /* Reset e Base */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: #333; background-color: #fff; font-size: 1.15rem; }
-        :root { --azul-escuro: #2C3E50; --azul-claro: #3498DB; --sucesso: #25D366; }
+        :root { --azul-escuro: #2C3E50; --azul-claro: #3498DB; --sucesso: #25D366; --ouro: #D4AF37; }
         
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         
@@ -46,6 +46,11 @@
         .caminho-lista li { position: relative; margin-bottom: 20px; padding: 20px 20px 20px 80px; background: #fff; border-radius: 8px; border: 1px solid #eee; font-size: 1.15rem; }
         .caminho-lista li::before { content: counter(item); counter-increment: item; position: absolute; left: 20px; top: 22px; background: var(--azul-escuro); color: #fff; width: 45px; height: 45px; text-align: center; line-height: 45px; font-weight: bold; border-radius: 50%; font-size: 1.2rem; }
         .caminho-lista li strong { color: var(--azul-escuro); display: block; font-size: 1.4rem; margin-bottom: 5px; }
+        
+        /* Estilo para o item BÔNUS */
+        .caminho-lista li.bonus { border: 2px solid var(--azul-claro); background: #f0faff; }
+        .caminho-lista li.bonus::before { background: var(--azul-claro); content: "★"; }
+        .caminho-lista li.bonus strong { color: var(--azul-claro); }
 
         /* Rodapé */
         .footer { background-color: var(--azul-escuro); color: #fff; padding: 50px 0; text-align: center; }
@@ -70,7 +75,7 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Arquitetura Educacional para Organizações de Alta Complexidade</h1>
+            <h1>Arquitetura Educacional para Organizações</h1>
             <h2>Consultoria Estrutural para Empresas, ONGs e Setor Público.</h2>
             <p>A aprendizagem organizacional precisa de estrutura, não apenas de eventos isolados. Ensinamos organizações a ensinar com método, planejamento e governança.</p>
             <a href="https://forms.gle/F1iHvNuMeePFioWK8" target="_blank" class="btn">Agendar Reunião Estratégica</a>
@@ -137,6 +142,10 @@
                     <strong>Governança e Resultados</strong>
                     Monitoramento contínuo por KPIs para assegurar que o sistema permaneça eficiente.
                 </li>
+                <li class="bonus">
+                    <strong>BÔNUS: Infraestrutura Inteligente de Aprendizagem (IA Educacional)</strong>
+                    Uso estruturado de Inteligência Artificial como camada de apoio ao ecossistema educacional corporativo.
+                </li>
             </ul>
 
             <a href="https://wa.me/5561992585588" class="btn-whatsapp" target="_blank">
@@ -166,5 +175,4 @@
     </footer>
 
 </body>
-
 </html>
